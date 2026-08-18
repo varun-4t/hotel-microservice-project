@@ -1,0 +1,12 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: CONFIGSERVER
+  cloud:
+    config:
+      server:
+       git:
+        uri: https://github.com/varun-4t/microservice-config
+        clone-on-start: true
